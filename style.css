@@ -1,0 +1,314 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Karla";
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(148, 38%, 91%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 30%;
+    height: auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.header{
+    margin: 20px;
+    font-size: 24px;
+    color: hsl(187, 25%, 22%);
+}
+
+.main-form{
+    margin: 20px;
+}
+
+label {
+    font-size: 11px;
+    margin-bottom: 5px;
+    color: hsl(187, 25%, 22%);
+}
+
+label span {
+    color: hsl(169, 82%, 27%);
+}
+
+.full-name {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.first-name {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 50%;
+    margin-right: 10px;
+}
+
+.first-name input{
+    width: 100%;
+    height:25px;
+    margin-right: 5px;
+    border-radius: 4px;
+    border: 1px solid hsl(0, 0%, 75%);
+}
+
+.first-name input:hover {
+    border: 1px solid hsl(169, 82%, 27%);
+}
+
+.first-name input:focus{
+    border: 1px solid hsl(169, 82%, 27%);
+    outline: none;
+}
+
+.last-name {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 50%;
+}
+
+.last-name input {
+    width: 100%;
+    height:25px;
+    margin-right: 5px;
+    border-radius: 4px;
+    border: 1px solid hsl(0, 0%, 75%);  
+}
+
+.last-name input:hover {
+    border: 1px solid hsl(169, 82%, 27%);
+}
+
+.last-name input:focus{
+    border: 1px solid hsl(169, 82%, 27%);
+    outline: none;
+}
+
+.email {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.email input {
+    width: 100%;
+    height: 25px;
+    border: 1px solid hsl(0, 0%, 75%);
+    border-radius: 4px;
+}
+
+.email input:hover {
+    border: 1px solid hsl(169, 82%, 27%);
+}
+
+.email input:focus {
+    border: 1px solid hsl(169, 82%, 27%);
+    outline: none;
+}
+
+.query-label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.radio-group {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.general-query {
+    width: 50%;
+    height: 27px;
+    border: 1px solid hsl(0, 0%, 75%);
+    border-radius: 5px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.general-query:hover {
+    border: 1px solid hsl(169, 82%, 27%);
+}
+
+.general-query input[type="radio"] {
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 15px;
+    accent-color: hsl(169, 82%, 27%);
+}
+
+.general-query label {
+    margin-top: 5px;
+}
+
+.support-request {
+    width: 50%;
+    height: 27px;
+    border: 1px solid hsl(0, 0%, 75%);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.support-request:hover {
+    border: 1px solid hsl(169, 82%, 27%);
+}
+
+.support-request label {
+    margin-top: 5px;
+}
+
+.support-request input[type="radio"] {
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 15px;
+    accent-color: hsl(169, 82%, 27%);
+}
+
+.message-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 13px;
+}
+
+.message-box textarea {
+    padding-left: 5px;
+    border: 1px solid hsl(0, 0%, 75%);
+    border-radius: 5px;
+    resize: none;
+    width: 100%;
+    height: 70px;
+}
+
+textarea:hover {
+    border: 1px solid hsl(169, 82%, 27%);
+}
+
+textarea:focus {
+    border: 1px solid hsl(169, 82%, 27%);
+    outline: none;
+}
+
+.checkbox {
+    margin-top: 15px;
+    display: flex;
+}
+
+.checkbox input[type="checkbox"] {
+    border-radius: 0;
+    margin-right: 10px;
+    accent-color: hsl(169, 82%, 27%);
+}
+
+.checkbox label {
+    margin-top: 5px;
+}
+
+.btnSubmit {
+    margin-top: 15px;
+}
+
+.btnSubmit button{
+    width: 100%;
+    height: 35px;
+    background-color: hsl(169, 82%, 27%);
+    color: hsl(0, 0%, 100%);
+    border: 0;
+    border-radius: 5px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(187, 25%, 22%);
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        width: 90%;
+        margin: 20px;
+    }
+
+    .full-name{
+        flex-direction: column;
+    }
+
+    .first-name, .last-name {
+        width: 100%;
+    }
+
+    .email input {
+        width: 100%;
+    }
+
+    .radio-group {
+        flex-direction: column;
+    }
+
+    .general-query, .support-request { 
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .btnSubmit button {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+.error {
+    color: hsl(0, 66%, 54%);
+    font-family: "Inter";
+    font-size: 11px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+.toast {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: hsl(187, 25%, 22%);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+}
+
+.toast.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.toast-header {
+    font-size: 12px;
+    margin: 5px;
+}
+
+.toast-message {
+    font-size: 11px;
+    font-weight: lighter;
+    margin: 5px;
+}

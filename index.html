@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="content">
+      <form id="form">
+        <div class="toast" id="toast">
+          <span class="toast-header"> ☑ Message Sent!</span>
+          <p class="toast-message">
+            Thanks for completing the form. We'll be in touch soon!
+          </p>
+        </div>
+      <div class="header">
+          <h5>Contact Us</h5>
+        </div>
+        <div class="main-form">
+          <div class="full-name">
+          <div class="first-name">
+            <label>First Name   <span>*</span></label>
+            <input type="text" name="firstName" id="name">
+            <span class="error" id="name_error"></span>
+          </div>
+          <div class="last-name">
+            <label>Last Name   <span>*</span></label>
+            <input type="text" name="lastName" id="surname">
+            <span class="error" id="surname_error"></span>
+          </div>
+          </div>
+          <div class="email">
+            <label>Email Address   <span>*</span></label>
+            <input type="text" name="email" id="email">
+            <span class="error" id="email_error"></span>
+          </div>
+          <div class="query-label">
+            <label>Query Type   <span>*</span></label>
+          </div>
+          <div class="radio-group">
+          <div class="general-query">
+            <input type="radio" name="query" id="rbGeneralQuery"><label>General Enquiry</label>
+          </div>
+          <div class="support-request">
+            <input type="radio" name="query" id="rbSupportRequest"><label>Support Request</label>
+          </div>
+        </div>
+        <span class="error" id="rb_error"></span>
+          <div class="message-box">
+            <label for="message">Message    <span>*</span></label>
+            <textarea id="message" name="message" ></textarea>
+            <span class="error" id="message_error"></span>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="agree" name="agree">
+            <label for="agree">I consent to being contracted by the team    <span>*</span></label>
+          </div>
+          <span class="error" id="checkbox_error"></span>
+          <div class="btnSubmit">
+            <button type="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+      </div>
+    </div>
+  <script src=script.js></script>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">SF Makgoba</a>.
+  </div>
+
+</body>
+</html>
+
+  <!-- 
+    Message Sent!
+    Thanks for completing the form. We'll be in touch soon!
+    -->
