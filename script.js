@@ -98,6 +98,7 @@ form.addEventListener('submit', (e) =>
     } else {
         e.preventDefault();
         showToast();
+        document.getElementById('form').reset();
     }
     
 });
