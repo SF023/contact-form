@@ -101,9 +101,3 @@ form.addEventListener('submit', (e) =>
     }
     
 });
-
-
-
-
-
-// (2) Show a toast saying message sent when successful 
